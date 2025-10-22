@@ -101,3 +101,9 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
     //...
 }
 ```
+
+# 3) Constructor ile Dependency Injection Kisaltilmis Hali
+
+- private readonly route = inject(ActivatedRoute);
+
+  - inject() ifadesi, klasik constructor(private route: ActivatedRoute) {} sözdiziminin yeni, kısaltılmış halidir (Angular 14+).
